@@ -33,12 +33,21 @@
 			color: #fff;
 		}
 	}
+    .form-control {
+        box-shadow: none;
+    }
 	.form-control:focus {
 		border-color: #ff7000;
-		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 112, 0, 0.6);
-		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 122, 0, 0.6);
+		box-shadow: 0 0 0 2px rgba(96, 102, 162, 0.2);
+		-webkit-box-shadow: 0 0 0 2px rgba(96, 102, 162, 0.2);
+        -moz-box-shadow: 0 0 0 2px rgba(96, 102, 162, 0.2);
+		-o-box-shadow: 0 0 0 2px rgba(96, 102, 162, 0.2);
+		-ms-box-shadow: 0 0 0 2px rgba(96, 102, 162, 0.2);
 		transition: border-color 0.7s, box-shadow 0.7s;
 		-webkit-transition: border-color 0.7s, box-shadow 0.7s;
+        -moz-transition: border-color 0.7s, box-shadow 0.7s;
+		-o-transition: border-color 0.7s, box-shadow 0.7s;
+		-ms-transition: border-color 0.7s, box-shadow 0.7s;
 	}
 	.wrap {
 		width: 100%;
@@ -49,96 +58,86 @@
 }
 
 .authenty.signin-main {
-	background-color: #eaeaea;
+	background-color: #fff;
 	.title {
 		text-align: center;
-		margin-bottom: 70px;
+		margin: 100px 0;
+        color: #fff;
 		h1 {
-			font-size: 40pt;
+			font-size: 54px;
 		}
 	}
 	.wrap {
-		padding-top: 80px;
+		padding-top: 140px;
 	}
 	.form-wrap {
-		width: 100%;
 		margin: 0 auto;
-		max-width: 400px;
-	}
-	.form-header {
-		padding: 20px 0;
-		text-align: center;
-		border-radius: 10px 10px 0 0;
-		background-color: #fff;
-		.fa-user {
-			font-size: 50px;
-			color: #fff;
-			border-radius: 50%;
-			border: 3px solid #E7E7E7;
-			padding: 15px 20px;
-			background: #f6f8f9; /* Old browsers */
-			background: -moz-linear-gradient(-45deg,  #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f6f8f9), color-stop(50%,#e5ebee), color-stop(51%,#d7dee3), color-stop(100%,#f5f7f9)); /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(-45deg,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(-45deg,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(-45deg,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* IE10+ */
-			background: linear-gradient(135deg,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-		}
-		.fa-user.fail {
-			color: #FF8479;
-			border: 3px solid #FF8479;
-			-webkit-transition: color 200ms linear;
-			-moz-transition: color 200ms linear;
-			-o-transition: color 200ms linear;
-			-ms-transition: color 200ms linear;
-			transition: color 200ms linear;
-		}
-		.fa-user.success {
-			color: #98CA4D;
-			border: 3px solid #98CA4D;
-			-webkit-transition: color 700ms linear;
-			-moz-transition: color 700ms linear;
-			-o-transition: color 700ms linear;
-			-ms-transition: color 700ms linear;
-			transition: color 700ms linear;
-		}
-	}
-	.form-main {
-		background-color: #505050;
-		padding: 40px 50px;
-	}
-	.form-footer {
-		background-color: #404040;
-		padding: 20px 50px;
-		a {
-			color: #999;
-			font-size: 10pt;
-			&:hover {
-				text-decoration: none;
-			}
-		}
-		.fa-unlock-alt {
-			font-size: 10pt;
-			color: #6f6f6f;
-			border-radius: 50%;
-			background-color: #505050;
-			padding: 5px 8px;
-			margin-right: 7px;
-		}	
-		.fa-check {
-			font-size: 10pt;
-			color: #6f6f6f;
-			border-radius: 50%;
-			background-color: #505050;
-			padding: 5px;
-			margin-right: 7px;
-		}
+        height: 500px;
+        width: 1100px;
+        #form_1 {
+            background: #f8f8f8;
+            height: 500px;
+            width: 700px;
+            padding: 100px 0;
+            .form-main {
+                width: 400px;
+                margin: 20px auto;
+            }
+            .form-footer {
+                width: 400px;
+                margin: 20px auto;
+                a {
+                    color: #999;
+                    font-size: 10pt;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                .fa-unlock-alt {
+                    font-size: 10pt;
+                    color: #fff;
+                    border-radius: 50%;
+                    padding: 5px 8px;
+                    background: #ccc;
+                    margin-right: 7px;
+                }	
+                .fa-check {
+                    font-size: 10pt;
+                    color: #fff;
+                    border-radius: 50%;
+                    padding: 5px;
+                    background: #ccc;
+                    margin-right: 7px;
+                }
+	       }
+        }
+        #form_1, .title {
+            float: left;
+        }
+        .title {           
+            width: 400px;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            width: 400px;
+            height: 500px;
+            background-image: url("../img/Death_to_Stock_Tactile_1.jpg");
+            background-size: cover;
+            &:before {
+                background-color: rgba(45,51,239,0.6);
+                content: '';
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
+        }
 	}
 	.signin {
-		padding-top: 10px;
-		padding-bottom: 10px;
-		background-color: #FF8627;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		background-color: #363567;
 		color: #fff;
 		-webkit-transition: background-color 300ms linear;
 		-moz-transition: background-color 300ms linear;
@@ -146,17 +145,17 @@
 		-ms-transition: background-color 300ms linear;
 		transition: background-color 300ms linear;
 		&:hover {
-			background-color: #ff6610;
+			background-color: #3c2fa3;
 		}
 	}
 	input[type="text"], input[type="password"] {
-		background-color: #404040;
+		background-color: #fff;
 		padding-left: 20px;
 		border-radius: 0;
-		border: none;
-		margin-bottom: 10px;
-		color: #ccc;
-		height: 43px;
+        border: 2px solid #dedede;
+		margin-bottom: 16px;
+		color: #999;
+		height: 54px;
 	}
 	.bounceIn {
 		opacity: 1;
@@ -175,6 +174,12 @@
 			padding-left: 0;
 			padding-right: 0;
 		}
+        .form-wrap {
+            width: 100%;
+            #form_1 {
+                width: 100%;
+            }
+        }
 	}
 }
 
