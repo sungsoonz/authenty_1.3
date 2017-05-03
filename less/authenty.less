@@ -168,32 +168,36 @@
 }
 
 
-@media screen and (max-width: $screen-sm-max) { 
-	.authenty.signin-main {
-		.wrap {
-			padding-left: 0;
-			padding-right: 0;
-		}
+@media screen and (max-width: @screen-sm-max) {
+    .authenty.signin-main {
+        .wrap {
+            padding-left: 0;
+            padding-right: 0;
+        }
         .form-wrap {
             width: 100%;
             #form_1 {
                 width: 100%;
             }
         }
-	}
+    }
 }
 
-@media screen and (max-width: $screen-xs-max) { 
-	.authenty.signin-main {
-		.form-main {
-			padding: 40px 30px;
-		}
-		.form-footer {
-			padding: 20px 30px;
-		}
-	}
+@media screen and (max-width: @screen-xs-max) {
+    .authenty.signin-main {
+        .form-wrap {
+            #form_1 {
+                .form-main {
+                    padding: 40px 30px;
+                    width: 100%;
+                }
+                .form-footer {
+                    padding: 20px 30px;
+                }
+            }
+        }
+    }
 }
-
 
 .authenty.signin-alt {
 	background-color: #373746;
@@ -342,7 +346,7 @@
 }
 
 
-@media screen and (max-width: $screen-sm-max) { 
+@media screen and (max-width: @screen-sm-max) { 
 	.authenty.signin-alt {
 		.horizontal-divider:before {
 			top: 10px;
@@ -471,7 +475,7 @@
 	}
 }
 
-@media screen and (max-width: $screen-xs-max) { 
+@media screen and (max-width: @screen-xs-max) { 
 	.authenty.signup-window {
 		.title {
 			margin-left: 15px;
@@ -619,7 +623,7 @@
 	}
 }
 
-@media screen and (max-width: $screen-xs-max) { 
+@media screen and (max-width: @screen-xs-max) { 
 	.authenty.signup-wizard {
 		.page-container {
 			padding: 60px 30px;
@@ -704,7 +708,7 @@
 	}
 }
 
-@media screen and (max-width: $screen-xs-max) { 
+@media screen and (max-width: @screen-xs-max) { 
 	.authenty.password-recovery {
 		.brand {
 			text-align: right;
